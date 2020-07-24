@@ -3,6 +3,13 @@
     src: url('../fonts/SugarDream.ttf');
 }
 
+@media only screen and (max-width: 767px) {
+    #books {
+        margin: auto;
+        width: 50%;
+    }
+}
+
 .card {
     margin: 10px;
 }
