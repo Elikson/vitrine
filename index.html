@@ -41,7 +41,7 @@
                 keys.forEach(key => {
                   index++;
                   if(index <= page*9 && index > (page-1)*9){
-                    $("#books").append('<div class="col"><div class="card" style="width: 14rem;"><img src="'+responsedata.products[key].image.large+'" class="card-img-top" alt="..."><div class="card-body"><p class="card-text"><h6>'+responsedata.products[key].name+'</h6><h6>Preco: '+responsedata.products[key].price+' R$</h6><h6>'+responsedata.products[key].sellerName+'</h6></p></div></div></div>')
+                    $("#books").append('<div class="col"><div class="card" style="width: 14rem;"><img src="'+responsedata.products[key].image.large+'" class="card-img-top" alt="..."><div class="card-body"><p class="card-text"><h6>'+responsedata.products[key].name+'</h6><h6>Preço: '+responsedata.products[key].price+' R$</h6><h6>Loja: '+responsedata.products[key].sellerName+'</h6></p></div></div></div>')
                   }
                   
                 });
