@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Dream;
+    src: url('../fonts/SugarDream.ttf');
+}
+
+.card {
+    margin: 10px;
+}
+
+.page-item {
+    color: mediumslateblue;
+}
+
+.title {
+    font-size: 28px;
+    margin-top: 10px;
+    color: mediumslateblue;
+    font-family: Dream;
+}
