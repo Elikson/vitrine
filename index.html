@@ -19,10 +19,10 @@
     <script>
 
       actualPage = 1;
-      load(actualPage)
+      loadPage(actualPage)
 
       length = 0;    
-      function load(page){
+      function loadPage(page){
         actualPage = page;
         length = 0;
         $("#books .col").remove();
@@ -52,12 +52,12 @@
       function loadPagination(){
         $(".pagination .page-item").remove();
         console.log("Paginas "+parseInt(length/9))
-        var pages = parseInt(length/9);
+        var pages = parseInt(length/9)+1;
         for(var i = 1; i <= pages; i++){
           if(i == actualPage){
-            $(".pagination").append('<li class="page-item disabled"><a class="page-link" onclick="load('+i+')">'+i+'</a></li>');
+            $(".pagination").append('<li class="page-item disabled"><a class="page-link" onclick="loadPage('+i+')">'+i+'</a></li>');
           }else{
-            $(".pagination").append('<li class="page-item"><a class="page-link" onclick="load('+i+')">'+i+'</a></li>');
+            $(".pagination").append('<li class="page-item"><a class="page-link" onclick="loadPage('+i+')">'+i+'</a></li>');
           }
         }
       }
